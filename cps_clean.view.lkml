@@ -7,7 +7,7 @@ view: cps_clean {
     label: "Age - Tiered"
     view_label: "Demographic Variables"
     type: tier
-#     style: integer
+    style: integer
     tiers: [
       0,
       18,

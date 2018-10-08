@@ -7,7 +7,7 @@ view: cps_with_groups {
     label: "Age - Tiered"
     view_label: "Cohort Demographic Variables"
     type: tier
-    # style: integer
+    style: integer
     tiers: [
       0,
       18,
@@ -1546,7 +1546,7 @@ view: cps_with_groups {
       105000
     ]
     value_format_name: decimal_0
-    # style: integer
+    style: integer
     view_label: "Cohort Earnings Variables"
     type: tier
     sql: CASE WHEN ${TABLE}.PTERNWA not in (0, 21474836.47) AND ${TABLE}.HRMIS in (4, 8) THEN ${TABLE}.PTERNWA * 52 ELSE -1 END
@@ -1566,7 +1566,7 @@ view: cps_with_groups {
       105000
     ]
     value_format_name: decimal_0
-    # style: integer
+    style: integer
     view_label: "Cohort Earnings Variables"
     type: tier
     sql: CASE WHEN ${TABLE}.PTERNWA not in (0, 21474836.47) AND ${TABLE}.HRMIS in (4, 8)
