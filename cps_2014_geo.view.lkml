@@ -1,69 +1,40 @@
 view: cps_2014_geo {
-  # # You can specify the table name if it's different from the view name:
-  # sql_table_name: my_schema_name.tester ;;
-  #
-  # # Define your dimensions and measures here, like this:
-  # dimension: user_id {
-  #   description: "Unique ID for each user that has ordered"
-  #   type: number
-  #   sql: ${TABLE}.user_id ;;
-  # }
-  #
-  # dimension: lifetime_orders {
-  #   description: "The total number of orders for each user"
-  #   type: number
-  #   sql: ${TABLE}.lifetime_orders ;;
-  # }
-  #
-  # dimension_group: most_recent_purchase {
-  #   description: "The date when each user last ordered"
-  #   type: time
-  #   timeframes: [date, week, month, year]
-  #   sql: ${TABLE}.most_recent_purchase_at ;;
-  # }
-  #
-  # measure: total_lifetime_orders {
-  #   description: "Use this for counting lifetime orders across many users"
-  #   type: sum
-  #   sql: ${lifetime_orders} ;;
-  # }
-}
+  sql_table_name: census.cps_2014_geo ;;
 
-# view: cps_2014_geo {
-#   # Or, you could make this view a derived table, like this:
-#   derived_table: {
-#     sql: SELECT
-#         user_id as user_id
-#         , COUNT(*) as lifetime_orders
-#         , MAX(orders.created_at) as most_recent_purchase_at
-#       FROM orders
-#       GROUP BY user_id
-#       ;;
-#   }
-#
-#   # Define your dimensions and measures here, like this:
-#   dimension: user_id {
-#     description: "Unique ID for each user that has ordered"
-#     type: number
-#     sql: ${TABLE}.user_id ;;
-#   }
-#
-#   dimension: lifetime_orders {
-#     description: "The total number of orders for each user"
-#     type: number
-#     sql: ${TABLE}.lifetime_orders ;;
-#   }
-#
-#   dimension_group: most_recent_purchase {
-#     description: "The date when each user last ordered"
-#     type: time
-#     timeframes: [date, week, month, year]
-#     sql: ${TABLE}.most_recent_purchase_at ;;
-#   }
-#
-#   measure: total_lifetime_orders {
-#     description: "Use this for counting lifetime orders across many users"
-#     type: sum
-#     sql: ${lifetime_orders} ;;
-#   }
-# }
+  dimension: hrhhid {
+    type: number
+    sql: ${TABLE}.hrhhid ;;
+    hidden: yes
+  }
+
+  dimension: hrhhid2 {
+    type: number
+    sql: ${TABLE}.hrhhid2 ;;
+    hidden: yes
+  }
+
+  dimension: county {
+    type: string
+    sql: concat(lpad(${gestfips_str}, 2, '0'), lpad(${gtco}, 3, '0')) ;;
+    map_layer_name: us_counties_fips
+    hidden: yes
+  }
+
+  dimension: gestfips_str {
+    type: string
+    sql: string(${TABLE}.gestfips) ;;
+    hidden: yes
+  }
+
+  dimension: gestfips {
+    type: number
+    sql: ${TABLE}.gestfips ;;
+    hidden: yes
+  }
+
+  dimension: gtco {
+    type: string
+    sql: string(${TABLE}.GTCO) ;;
+    hidden: yes
+  }
+}
