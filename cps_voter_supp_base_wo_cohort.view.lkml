@@ -88,6 +88,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hephoneo {
+    hidden: yes
     label: "Phone interview acceptable,y/n"
     view_label: "Household Variables"
     type: string
@@ -120,6 +121,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hetelavl {
+    hidden: yes
     label: "No residential phone,available elsewhere,y/n"
     view_label: "Household Variables"
     type: string
@@ -158,6 +160,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hetelhhd {
+    hidden: yes
     label: "Phone in living quarters,y/n"
     view_label: "Household Variables"
     type: string
@@ -234,6 +237,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hrhtype {
+    hidden: yes
     label: "Type of family/single individual"
     view_label: "Household Variables"
     type: string
@@ -314,6 +318,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hrintsta {
+    hidden: yes
     label: "Interview/non-interview status"
     view_label: "Household Variables"
     type: string
@@ -346,6 +351,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hrlonglk {
+    hidden: yes
     label: "Longitudinal link indicator"
     view_label: "Household Variables"
     type: string
@@ -378,6 +384,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hrmis {
+    hidden: yes
     label: "Month-in-sample"
     view_label: "Household Variables"
     type: string
@@ -434,6 +441,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hrmonth {
+    hidden: yes
     label: "Month of interview"
     view_label: "Household Variables"
     type: string
@@ -531,6 +539,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hubus {
+    hidden: yes
     label: "Presence of business/farm in hhld,y/n"
     view_label: "Labor Force Variables"
     type: string
@@ -569,6 +578,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hubusl1 {
+    hidden: yes
     label: "Line numbers of business/farm owners 1"
     view_label: "Labor Force Variables"
     type: tier
@@ -578,6 +588,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hubusl2 {
+    hidden: yes
     label: "Line numbers of business/farm owners 2"
     view_label: "Labor Force Variables"
     type: tier
@@ -587,6 +598,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hubusl3 {
+    hidden: yes
     label: "Line numbers of business/farm owners 3"
     view_label: "Labor Force Variables"
     type: tier
@@ -596,6 +608,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hubusl4 {
+    hidden: yes
     label: "Line numbers of business/farm owners 4"
     view_label: "Labor Force Variables"
     type: tier
@@ -605,6 +618,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: huinttyp {
+    hidden: yes
     label: "Type of interview,personal/telephone"
     view_label: "Household Variables"
     type: string
@@ -643,6 +657,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hurespli {
+    hidden: yes
     label: "Line number of current respondent"
     view_label: "Household Variables"
     type: tier
@@ -652,6 +667,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hutypb {
+    hidden: yes
     label: "Type b non-interview categories"
     view_label: "Household Variables"
     type: string
@@ -1072,6 +1088,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prcitflg {
+    hidden: yes
     label: "Citizenship allocation flag"
     view_label: "Demographic Variables"
     type: string
@@ -1262,6 +1279,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prfamnum {
+    hidden: yes
     label: "Family number"
     view_label: "Demographic Variables"
     type: string
@@ -1396,6 +1414,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prfamrel {
+    hidden: yes
     label: "Family relationship(recode)"
     view_label: "Demographic Variables"
     type: string
@@ -1434,6 +1453,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prfamtyp {
+    hidden: yes
     label: "Family type(recode)"
     view_label: "Demographic Variables"
     type: string
@@ -1566,6 +1586,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prtage {
+    hidden: yes
     label: "Demographics - age topcoded at 85, 90 or 80 (see full description)"
     view_label: "Demographic Variables"
     type: tier
@@ -1575,6 +1596,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prtfage {
+    hidden: yes
     label: "Top coded flag for age"
     view_label: "Demographic Variables"
     type: string
@@ -1595,6 +1617,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puchinhh {
+    hidden: yes
     label: "Reason for the changes in household composition"
     view_label: "Demographic Variables"
     type: string
@@ -1669,6 +1692,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pulineno {
+    hidden: yes
     label: "Line number"
     view_label: "Demographic Variables"
     type: tier
@@ -1678,6 +1702,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peabspdo {
+    hidden: yes
     label: "Paid absence from work,y/n"
     view_label: "Labor Force Variables"
     type: string
@@ -1704,6 +1729,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peabsrsn {
+    hidden: yes
     label: "Reason for work absence last week"
     view_label: "Labor Force Variables"
     type: string
@@ -1802,6 +1828,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pedw4wk {
+    hidden: yes
     label: "(not in,discouraged)worked in last 4 weeks"
     view_label: "Labor Force Variables"
     type: string
@@ -1828,6 +1855,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pedwavl {
+    hidden: yes
     label: "(not in,discouraged)available for job last week"
     view_label: "Labor Force Variables"
     type: string
@@ -1854,6 +1882,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pedwavr {
+    hidden: yes
     label: "(not in,discouraged)reason can't work"
     view_label: "Labor Force Variables"
     type: string
@@ -1886,6 +1915,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pedwlko {
+    hidden: yes
     label: "(not in,discouraged)look for work in past year"
     view_label: "Labor Force Variables"
     type: string
@@ -1912,6 +1942,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pedwlkwk {
+    hidden: yes
     label: "(not in,discouraged)looked since last job,y/n"
     view_label: "Labor Force Variables"
     type: string
@@ -1938,6 +1969,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pedwrsn {
+    hidden: yes
     label: "(not in,discouraged)reason not looking"
     view_label: "Labor Force Variables"
     type: string
@@ -2018,6 +2050,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pedwwk {
+    hidden: yes
     label: "(not in,discouraged)worked in past year,y/n"
     view_label: "Labor Force Variables"
     type: string
@@ -2044,6 +2077,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pedwwnto {
+    hidden: yes
     label: "(not in,discouraged)wanted a job,y/n"
     view_label: "Labor Force Variables"
     type: string
@@ -2088,6 +2122,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pehract1 {
+    hidden: yes
     label: "# hours actually worked at main job"
     view_label: "Labor Force Variables"
     type: tier
@@ -2097,6 +2132,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pehract2 {
+    hidden: yes
     label: "# hours actually worked at other job(s)"
     view_label: "Labor Force Variables"
     type: tier
@@ -2106,6 +2142,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pehractt {
+    hidden: yes
     label: "# hours actually worked at all jobs"
     view_label: "Labor Force Variables"
     type: tier
@@ -2115,6 +2152,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pehravl {
+    hidden: yes
     label: "(part-timer)available for full-time,y/n"
     view_label: "Labor Force Variables"
     type: string
@@ -2141,6 +2179,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pehrftpt {
+    hidden: yes
     label: "Usually work full-time,y/n"
     view_label: "Labor Force Variables"
     type: string
@@ -2173,6 +2212,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pehrrsn1 {
+    hidden: yes
     label: "(part-timer)reason"
     view_label: "Labor Force Variables"
     type: string
@@ -2247,6 +2287,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pehrrsn2 {
+    hidden: yes
     label: "(part-timer)reason not full-time"
     view_label: "Labor Force Variables"
     type: string
@@ -2303,6 +2344,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pehrrsn3 {
+    hidden: yes
     label: "(full-timer)reason part-time last week"
     view_label: "Labor Force Variables"
     type: string
@@ -2395,6 +2437,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pehrusl1 {
+    hidden: yes
     label: "# hours usually worked at main job"
     view_label: "Labor Force Variables"
     type: tier
@@ -2404,6 +2447,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pehrusl2 {
+    hidden: yes
     label: "# hours usually worked at other job(s)"
     view_label: "Labor Force Variables"
     type: tier
@@ -2413,6 +2457,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pehruslt {
+    hidden: yes
     label: "# hours usually worked at all jobs"
     view_label: "Labor Force Variables"
     type: tier
@@ -2422,6 +2467,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pehrwant {
+    hidden: yes
     label: "Full-time work desired,y/n"
     view_label: "Labor Force Variables"
     type: string
@@ -2454,6 +2500,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pejhrsn {
+    hidden: yes
     label: "(not in,job history)reason left last job"
     view_label: "Labor Force Variables"
     type: string
@@ -2516,6 +2563,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pejhwant {
+    hidden: yes
     label: "(not in,job history)look for work in next year"
     view_label: "Labor Force Variables"
     type: string
@@ -2542,6 +2590,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pejhwko {
+    hidden: yes
     label: "(not in,job history)worked in past year,y/n"
     view_label: "Labor Force Variables"
     type: string
@@ -2568,6 +2617,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pelayavl {
+    hidden: yes
     label: "(layoff)available for work if recalled,y/n"
     view_label: "Labor Force Variables"
     type: string
@@ -2594,6 +2644,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pelaydur {
+    hidden: yes
     label: "(layoff)# weeks looking for job"
     view_label: "Labor Force Variables"
     type: tier
@@ -2603,6 +2654,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pelayfto {
+    hidden: yes
     label: "(layoff)from full-time job,y/n"
     view_label: "Labor Force Variables"
     type: string
@@ -2629,6 +2681,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pelaylk {
+    hidden: yes
     label: "(layoff)called back,still looking for work,y/n"
     view_label: "Labor Force Variables"
     type: string
@@ -2655,6 +2708,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pelkavl {
+    hidden: yes
     label: "(unemployed)available for work last week,y/n"
     view_label: "Labor Force Variables"
     type: string
@@ -2681,6 +2735,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pelkdur {
+    hidden: yes
     label: "(unemployed)#weeks on job search"
     view_label: "Labor Force Variables"
     type: tier
@@ -2690,6 +2745,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pelkfto {
+    hidden: yes
     label: "(unemployed)looking-full-time work wanted,y/n"
     view_label: "Labor Force Variables"
     type: string
@@ -2722,6 +2778,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pelkll1o {
+    hidden: yes
     label: "(unemployed)looking-activity before search"
     view_label: "Labor Force Variables"
     type: string
@@ -2760,6 +2817,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pelkll2o {
+    hidden: yes
     label: "(unemployed)looking-lost/quit job"
     view_label: "Labor Force Variables"
     type: string
@@ -2792,6 +2850,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pelklwo {
+    hidden: yes
     label: "(unemployed)looking-when last worked"
     view_label: "Labor Force Variables"
     type: string
@@ -2824,6 +2883,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pelkm1 {
+    hidden: yes
     label: "(unemployed)looking-search methods"
     view_label: "Labor Force Variables"
     type: string
@@ -2910,7 +2970,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pemjnum {
-    label: "# of jobs had"
+    label: "# of Jobs Had"
     view_label: "Labor Force Variables"
     type: string
 
@@ -2942,6 +3002,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pemjot {
+    hidden: yes
     label: "Had multiple jobs,y/n"
     view_label: "Labor Force Variables"
     type: string
@@ -3024,6 +3085,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: penlfact {
+    hidden: yes
     label: "(not in)reason"
     view_label: "Labor Force Variables"
     type: string
@@ -3074,6 +3136,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: penlfjh {
+    hidden: yes
     label: "(not in)last worked at job/business"
     view_label: "Labor Force Variables"
     type: string
@@ -3106,6 +3169,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: penlfret {
+    hidden: yes
     label: "(retired) from job/business,y/n"
     view_label: "Labor Force Variables"
     type: string
@@ -3132,6 +3196,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peret1 {
+    hidden: yes
     label: "(retired)want full/part-time job,y/n"
     view_label: "Labor Force Variables"
     type: string
@@ -3176,6 +3241,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prabsrea {
+    hidden: yes
     label: "Work absence,reason & pay status"
     view_label: "Labor Force Variables"
     type: string
@@ -3430,6 +3496,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prcivlf {
+    hidden: yes
     label: "Part of/not part of"
     view_label: "Labor Force Variables"
     type: string
@@ -3456,6 +3523,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prdisc {
+    hidden: yes
     label: "Discouraged worker/conditionally interested"
     view_label: "Labor Force Variables"
     type: string
@@ -3488,6 +3556,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: premphrs {
+    hidden: yes
     label: "Reason for work absence or hours at work"
     view_label: "Labor Force Variables"
     type: string
@@ -3640,6 +3709,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prempnot {
+    hidden: yes
     label: "Employment status,recode"
     view_label: "Labor Force Variables"
     type: string
@@ -3678,6 +3748,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prerelg {
+    hidden: yes
     label: "Earnings edit eligibility flag"
     view_label: "Earnings Variables"
     type: string
@@ -3704,6 +3775,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prexplf {
+    hidden: yes
     label: "Employed/unemployed"
     view_label: "Labor Force Variables"
     type: string
@@ -3730,7 +3802,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prftlf {
-    label: "Full-time/part-time"
+    label: "Full-time/Part-time"
     view_label: "Labor Force Variables"
     type: string
 
@@ -3756,6 +3828,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prhrusl {
+    hidden: yes
     label: "Hours usually worked weekly"
     view_label: "Labor Force Variables"
     type: string
@@ -3818,6 +3891,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prjobsea {
+    hidden: yes
     label: "Job search,recode"
     view_label: "Labor Force Variables"
     type: string
@@ -3862,6 +3936,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prpthrs {
+    hidden: yes
     label: "(part-timer)economic/non-economic reasons,hours"
     view_label: "Labor Force Variables"
     type: string
@@ -3954,6 +4029,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prptrea {
+    hidden: yes
     label: "(part-timer)specific reason"
     view_label: "Labor Force Variables"
     type: string
@@ -4106,6 +4182,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prunedur {
+    hidden: yes
     label: "Unemployment duration"
     view_label: "Labor Force Variables"
     type: tier
@@ -4129,13 +4206,13 @@ view: CPS_Voting_and_Registration_wo_cohort {
       when: {
         sql: ${TABLE}.pruntype = 1
           ;;
-        label: "Job loser/on layoff"
+        label: "Lost Job/On Layoff"
       }
 
       when: {
         sql: ${TABLE}.pruntype = 2
           ;;
-        label: "Other job loser"
+        label: "Job Lost/Other"
       }
 
       when: {
@@ -4147,7 +4224,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
       when: {
         sql: ${TABLE}.pruntype = 4
           ;;
-        label: "Job leaver"
+        label: "Job Leaver"
       }
 
       when: {
@@ -4165,6 +4242,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prwksch {
+    hidden: yes
     label: "Employment status by time worked/lost"
     view_label: "Labor Force Variables"
     type: string
@@ -4209,6 +4287,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prwkstat {
+    hidden: yes
     label: "Full-time/part-time work status"
     view_label: "Labor Force Variables"
     type: string
@@ -4295,6 +4374,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prwntjob {
+    hidden: yes
     label: "(not in)or wants job-recode"
     view_label: "Labor Force Variables"
     type: string
@@ -4321,6 +4401,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puabsot {
+    hidden: yes
     label: "Output var determines absence from job"
     view_label: "Labor Force Variables"
     type: string
@@ -4377,6 +4458,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pubus1 {
+    hidden: yes
     label: "Unpaid work in family business/farm,y/n"
     view_label: "Labor Force Variables"
     type: string
@@ -4415,6 +4497,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pubus2ot {
+    hidden: yes
     label: "Stores bus2 entry"
     view_label: "Labor Force Variables"
     type: string
@@ -4453,6 +4536,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pubusck1 {
+    hidden: yes
     label: "Filter for question on unpaid work"
     view_label: "Labor Force Variables"
     type: string
@@ -4491,6 +4575,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pubusck2 {
+    hidden: yes
     label: "(family business)skips owners,no work last week"
     view_label: "Labor Force Variables"
     type: string
@@ -4529,6 +4614,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pubusck3 {
+    hidden: yes
     label: "Filter for business owners to absence reason"
     view_label: "Labor Force Variables"
     type: string
@@ -4567,6 +4653,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pubusck4 {
+    hidden: yes
     label: "Filter for business owners skip pattern"
     view_label: "Labor Force Variables"
     type: string
@@ -4605,6 +4692,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pudis {
+    hidden: yes
     label: "Verify disability status from previous month"
     view_label: "Labor Force Variables"
     type: string
@@ -4649,6 +4737,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pudis1 {
+    hidden: yes
     label: "Probe #1 for disability"
     view_label: "Labor Force Variables"
     type: string
@@ -4687,6 +4776,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pudis2 {
+    hidden: yes
     label: "Probe #2 for disability"
     view_label: "Labor Force Variables"
     type: string
@@ -4725,6 +4815,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pudwck1 {
+    hidden: yes
     label: "Filter for discouraged worker screening"
     view_label: "Labor Force Variables"
     type: string
@@ -4775,6 +4866,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pudwck2 {
+    hidden: yes
     label: "Filter for disabled"
     view_label: "Labor Force Variables"
     type: string
@@ -4825,6 +4917,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pudwck3 {
+    hidden: yes
     label: "Filter for retired"
     view_label: "Labor Force Variables"
     type: string
@@ -4863,6 +4956,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pudwck4 {
+    hidden: yes
     label: "Filter/plug for passive jobseekers"
     view_label: "Labor Force Variables"
     type: string
@@ -4913,6 +5007,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pudwck5 {
+    hidden: yes
     label: "Filter/plug for passive jobseeker"
     view_label: "Labor Force Variables"
     type: string
@@ -4951,6 +5046,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puhrck1 {
+    hidden: yes
     label: "Remove groups from actual hours series"
     view_label: "Labor Force Variables"
     type: string
@@ -4989,6 +5085,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puhrck12 {
+    hidden: yes
     label: "Filter for <15 hours to go to looking series"
     view_label: "Labor Force Variables"
     type: string
@@ -5027,6 +5124,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puhrck2 {
+    hidden: yes
     label: "Skips persons out of pt series"
     view_label: "Labor Force Variables"
     type: string
@@ -5083,6 +5181,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puhrck3 {
+    hidden: yes
     label: "Skips persons out of pt series"
     view_label: "Labor Force Variables"
     type: string
@@ -5145,6 +5244,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puhrck4 {
+    hidden: yes
     label: "Skips persons"
     view_label: "Labor Force Variables"
     type: string
@@ -5201,6 +5301,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puhrck5 {
+    hidden: yes
     label: "Filter for multiple jobholders for job 2 hours"
     view_label: "Labor Force Variables"
     type: string
@@ -5239,6 +5340,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puhrck6 {
+    hidden: yes
     label: "Filter for actual hours jobs 1 and 2"
     view_label: "Labor Force Variables"
     type: string
@@ -5283,6 +5385,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puhrck7 {
+    hidden: yes
     label: "Filter for hours worked paths"
     view_label: "Labor Force Variables"
     type: string
@@ -5333,6 +5436,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puhroff1 {
+    hidden: yes
     label: "Any work hours were lost last week"
     view_label: "Labor Force Variables"
     type: string
@@ -5371,6 +5475,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puhroff2 {
+    hidden: yes
     label: "Number of work hours lost last week"
     view_label: "Labor Force Variables"
     type: tier
@@ -5380,6 +5485,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puhrot1 {
+    hidden: yes
     label: "Extra hours worked last week"
     view_label: "Labor Force Variables"
     type: string
@@ -5418,6 +5524,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puhrot2 {
+    hidden: yes
     label: "Number of extra hours worked last week"
     view_label: "Labor Force Variables"
     type: tier
@@ -5427,6 +5534,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pujhck1 {
+    hidden: yes
     label: "Filter for outgoing rotations"
     view_label: "Labor Force Variables"
     type: string
@@ -5471,6 +5579,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pujhck2 {
+    hidden: yes
     label: "Filter for persons going thru i&o series"
     view_label: "Labor Force Variables"
     type: string
@@ -5515,6 +5624,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pujhck3 {
+    hidden: yes
     label: "Filter for unemployed job history"
     view_label: "Labor Force Variables"
     type: string
@@ -5553,6 +5663,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pujhck4 {
+    hidden: yes
     label: "(not in)filter for dependent"
     view_label: "Labor Force Variables"
     type: string
@@ -5609,6 +5720,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pujhck5 {
+    hidden: yes
     label: "(not in)filter/carryover for dependent"
     view_label: "Labor Force Variables"
     type: string
@@ -5647,6 +5759,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pujhdp1o {
+    hidden: yes
     label: "Out variable for jhdp1"
     view_label: "Labor Force Variables"
     type: string
@@ -5685,6 +5798,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pulay {
+    hidden: yes
     label: "Person on layoff from job"
     view_label: "Labor Force Variables"
     type: string
@@ -5741,6 +5855,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pulay6m {
+    hidden: yes
     label: "Person on layoff,recalled in 6 months,y/n"
     view_label: "Labor Force Variables"
     type: string
@@ -5779,6 +5894,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pulayavr {
+    hidden: yes
     label: "Person on layoff,reason unavailable to work"
     view_label: "Labor Force Variables"
     type: string
@@ -5823,6 +5939,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pulayck1 {
+    hidden: yes
     label: "Filter for previous month layoff status"
     view_label: "Labor Force Variables"
     type: string
@@ -5867,6 +5984,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pulayck2 {
+    hidden: yes
     label: "Filter/plug for dependent layoff"
     view_label: "Labor Force Variables"
     type: string
@@ -5905,6 +6023,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pulayck3 {
+    hidden: yes
     label: "Dependent i & o filter/carryover"
     view_label: "Labor Force Variables"
     type: string
@@ -5949,6 +6068,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pulaydt {
+    hidden: yes
     label: "Person on layoff,has return date,y/n"
     view_label: "Labor Force Variables"
     type: string
@@ -5987,6 +6107,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pulk {
+    hidden: yes
     label: "Looked for work in last 4 wks"
     view_label: "Labor Force Variables"
     type: string
@@ -6043,6 +6164,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pulkavr {
+    hidden: yes
     label: "Reason jobseeker unavailable last week"
     view_label: "Labor Force Variables"
     type: string
@@ -6093,6 +6215,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pulkdk1 {
+    hidden: yes
     label: "(unemployed) followup to lkm1"
     view_label: "Labor Force Variables"
     type: string
@@ -6197,6 +6320,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pulkdk2 {
+    hidden: yes
     label: "(looking for work)followup to lkm2"
     view_label: "Labor Force Variables"
     type: string
@@ -6295,6 +6419,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pulkdk3 {
+    hidden: yes
     label: "(looking for work)followup to lkm3"
     view_label: "Labor Force Variables"
     type: string
@@ -6393,6 +6518,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pulkdk4 {
+    hidden: yes
     label: "(looking for work)followup to lkm4"
     view_label: "Labor Force Variables"
     type: string
@@ -6491,6 +6617,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pulkdk5 {
+    hidden: yes
     label: "(looking for work)followup to lkm5"
     view_label: "Labor Force Variables"
     type: string
@@ -6589,6 +6716,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pulkdk6 {
+    hidden: yes
     label: "(looking for work)followup to lkm6"
     view_label: "Labor Force Variables"
     type: string
@@ -6687,6 +6815,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pulkm2 {
+    hidden: yes
     label: "(job search)methods,all in last 4 weeks"
     view_label: "Labor Force Variables"
     type: string
@@ -6785,6 +6914,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pulkm3 {
+    hidden: yes
     label: "(job search)methods-followup"
     view_label: "Labor Force Variables"
     type: string
@@ -6883,6 +7013,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pulkm4 {
+    hidden: yes
     label: "(job search)methods-followup2"
     view_label: "Labor Force Variables"
     type: string
@@ -6983,6 +7114,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: pulkm5 {
     label: "(job search)methods followup3"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -7081,6 +7213,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: pulkm6 {
     label: "(job search)methods followup4"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -7179,6 +7312,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: pulkps1 {
     label: "(job search)passive entry to lkm1-followup"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -7283,6 +7417,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: pulkps2 {
     label: "(job search)passive entry to lkm2-followup"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -7381,6 +7516,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: pulkps3 {
     label: "(job search)passive entry to lkm3-followup"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -7479,6 +7615,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: pulkps4 {
     label: "(job search)passive entry to lkm4-followup"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -7577,6 +7714,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: pulkps5 {
     label: "(job search)passive entry to lkm5-followup"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -7675,6 +7813,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: pulkps6 {
     label: "(job search)passive entry to lkm6-followup"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -7773,6 +7912,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: punlfck1 {
     label: "Age filter for retirement question"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -7811,6 +7951,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: punlfck2 {
     label: "Outgoing rotation filter"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -7849,6 +7990,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: puretot {
     label: "Verify retirement status,previous month"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -7893,6 +8035,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: puslfprx {
     label: "Information given by self/proxy"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -7937,6 +8080,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: puwk {
     label: "Did work for pay/profit"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -8053,6 +8197,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peio2cow {
+    hidden: yes
     label: "(second job)class of worker"
     view_label: "Industry"
     type: string
@@ -8165,6 +8310,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puio2mfg {
+    hidden: yes
     label: "(second job)in manufacturing/wholesale/retail"
     view_label: "Industry"
     type: string
@@ -8215,6 +8361,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puiock1 {
+    hidden: yes
     label: "Filter for dependent industry & occupation"
     view_label: "Industry"
     type: string
@@ -8265,6 +8412,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puiock2 {
+    hidden: yes
     label: "Filter for previous month's referred i&o cases"
     view_label: "Industry"
     type: string
@@ -8309,6 +8457,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puiock3 {
+    hidden: yes
     label: "Filter for previous month's unknown occupation"
     view_label: "Industry"
     type: string
@@ -8353,6 +8502,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puiodp1 {
+    hidden: yes
     label: "Verification of previous month's employer"
     view_label: "Industry"
     type: string
@@ -8391,6 +8541,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puiodp2 {
+    hidden: yes
     label: "Job duties changed since last month,y/n"
     view_label: "Industry"
     type: string
@@ -8429,6 +8580,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puiodp3 {
+    hidden: yes
     label: "Verify previous month's occupation description"
     view_label: "Industry"
     type: string
@@ -8467,6 +8619,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: ptern {
+    hidden: yes
     label: "(weekly)amount of overtime earnings"
     view_label: "Earnings Variables"
     type: tier
@@ -8476,6 +8629,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peerncov {
+    hidden: yes
     label: "Covered by labor union/employee contract,y/n"
     view_label: "Earnings Variables"
     type: string
@@ -8502,7 +8656,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pternh1o {
-    label: "Hourly pay rate,amount"
+    label: "Hourly Pay Rate Tiers"
     view_label: "Earnings Variables"
     type: tier
     tiers: [0, 25, 50, 75, 100]
@@ -8511,6 +8665,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pternh2 {
+    hidden: yes
     label: "(main job)hourly pay rate,amount"
     view_label: "Earnings Variables"
     type: tier
@@ -8520,7 +8675,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peernhro {
-    label: "#hours usually worked"
+    label: "# Weekly Hours Usually Worked Tiers"
     view_label: "Earnings Variables"
     type: tier
     tiers: [0, 25, 50, 75, 99]
@@ -8529,7 +8684,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peernhry {
-    label: "Hourly/non-hourly worker"
+    label: "Hourly/Non-Hourly Worker"
     view_label: "Earnings Variables"
     type: string
 
@@ -8555,6 +8710,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peernlab {
+    hidden: yes
     label: "Union member,y/n"
     view_label: "Earnings Variables"
     type: string
@@ -8581,6 +8737,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peernper {
+    hidden: yes
     label: "When received,periodicity"
     view_label: "Earnings Variables"
     type: string
@@ -8637,7 +8794,8 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peernrt {
-    label: "Paid hourly,y/n"
+    hidden: yes
+    label: "Paid Hourly (Y/N)"
     view_label: "Earnings Variables"
     type: string
 
@@ -8675,6 +8833,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peernuot {
+    hidden: yes
     label: "Overtime pay/tips/commission,y/n"
     view_label: "Earnings Variables"
     type: string
@@ -8701,7 +8860,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peernwkp {
-    label: "#paid weeks per year"
+    label: "# Paid Weeks per Year Tier"
     view_label: "Earnings Variables"
     type: tier
     tiers: [1, 14, 27, 40, 53]
@@ -8710,6 +8869,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pternhly {
+    hidden: yes
     label: "Hourly pay rate,amount-recode"
     view_label: "Earnings Variables"
     type: tier
@@ -8719,6 +8879,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pternwa {
+    hidden: yes
     label: "Weekly earnings,amount-recode"
     view_label: "Earnings Variables"
     type: tier
@@ -8728,6 +8889,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prhernal {
+    hidden: yes
     label: "Persons hourly earnings recode allocation flag"
     view_label: "Earnings Variables"
     type: string
@@ -8757,6 +8919,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prwernal {
+    hidden: yes
     label: "(person)weekly earnings allocation flag-recode"
     view_label: "Earnings Variables"
     type: string
@@ -8786,6 +8949,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pthr {
+    hidden: yes
     label: "Hourly pay-top code"
     view_label: "Earnings Variables"
     type: string
@@ -8806,6 +8970,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: ptot {
+    hidden: yes
     label: "Weekly overtime,amount-top code flag"
     view_label: "Earnings Variables"
     type: string
@@ -8826,6 +8991,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: ptwk {
+    hidden: yes
     label: "Weekly-top code flag"
     view_label: "Earnings Variables"
     type: string
@@ -8846,6 +9012,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: ptern2 {
+    hidden: yes
     label: "(calculated)weekly overtime"
     view_label: "Earnings Variables"
     type: tier
@@ -8855,6 +9022,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pternh1c {
+    hidden: yes
     label: "Hourly pay rate,excluding overtime"
     view_label: "Earnings Variables"
     type: tier
@@ -8864,6 +9032,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peschenr {
+    hidden: yes
     label: "In high school/college/university,y/n"
     view_label: "Basic CPS School Enrollment Variables"
     type: string
@@ -9029,6 +9198,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pehgcomp {
+    hidden: yes
     label: "Highest grade completed before ged"
     view_label: "Demographic Variables"
     type: string
@@ -9100,6 +9270,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pecyc {
+    hidden: yes
     label: "Years of college credit completed"
     view_label: "Demographic Variables"
     type: string
@@ -9150,6 +9321,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pegrprof {
+    hidden: yes
     label: "(have b.s./b.a.)taken graduate/prof. courses"
     view_label: "Demographic Variables"
     type: string
@@ -9179,6 +9351,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pegr6cor {
+    hidden: yes
     label: "Completed 6 or more graduate courses,y/n"
     view_label: "Demographic Variables"
     type: string
@@ -9208,6 +9381,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pems123 {
+    hidden: yes
     label: "Master's program 1, 2, or 3 years"
     view_label: "Demographic Variables"
     type: string
@@ -9244,6 +9418,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hryear4 {
+    hidden: yes
     label: "4 digit year of interview"
     view_label: "Household Variables"
     type: tier
@@ -9253,6 +9428,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prchld {
+    hidden: yes
     label: "Presence of own children <18 years by age group"
     view_label: "Demographic Variables"
     type: string
@@ -9413,6 +9589,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: prmlr {
     label: "Employment status recode"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -9550,6 +9727,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prmjind2 {
+    hidden: yes
     label: "(second job)industry,major groups-recode"
     view_label: "Industry"
     type: string
@@ -9755,6 +9933,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prmjocc2 {
+    hidden: yes
     label: "(second job)occupation,major groups-recode"
     view_label: "Industry"
     type: string
@@ -9897,6 +10076,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prcow2 {
+    hidden: yes
     label: "(second job)class of worker-recode"
     view_label: "Industry"
     type: string
@@ -10027,6 +10207,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prdtcow2 {
+    hidden: yes
     label: "(second job)detailed class of worker-recode"
     view_label: "Industry"
     type: string
@@ -10486,6 +10667,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prdtind2 {
+    hidden: yes
     label: "(second job)detailed industry-recode"
     view_label: "Industry"
     type: string
@@ -11041,6 +11223,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prdtocc2 {
+    hidden: yes
     label: "(second job)detailed occupation groups-recode"
     view_label: "Industry"
     type: string
@@ -11219,6 +11402,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: premp {
     label: "Employed non-farm/non-private hhld industries"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -11237,6 +11421,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prnagws {
+    hidden: yes
     label: "Non-agriculture/salary workers"
     view_label: "Industry"
     type: string
@@ -11257,6 +11442,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prnagpws {
+    hidden: yes
     label: "Non-agriculture/private/salary workers-recode"
     view_label: "Industry"
     type: string
@@ -11277,6 +11463,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pragna {
+    hidden: yes
     label: "Industry,agriculture/non-agriculture"
     view_label: "Industry"
     type: string
@@ -11421,6 +11608,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: prioelg {
     label: "Industry and occupation edit eligibility flag"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -11617,6 +11805,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: primind2 {
+    hidden: yes
     label: "(second job)detailed industry"
     view_label: "Industry"
     type: string
@@ -11987,6 +12176,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hutypc {
+    hidden: yes
     label: "Type c non-interview categories"
     view_label: "Household Variables"
     type: string
@@ -12086,6 +12276,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: huprscnt {
+    hidden: yes
     label: "# of actual & attempted personal contacts"
     view_label: "Household Variables"
     type: tier
@@ -12095,6 +12286,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hufinal {
+    hidden: yes
     label: "Final code,status of interview"
     view_label: "Household Variables"
     type: string
@@ -12762,6 +12954,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peafwhn1 {
+    hidden: yes
     label: "Past military service, period of active duty"
     view_label: "Demographic Variables"
     type: string
@@ -12833,6 +13026,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peafwhn2 {
+    hidden: yes
     label: "Past military service, period of active duty"
     view_label: "Demographic Variables"
     type: string
@@ -12904,6 +13098,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peafwhn3 {
+    hidden: yes
     label: "Past military service, period of active duty"
     view_label: "Demographic Variables"
     type: string
@@ -12975,6 +13170,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peafwhn4 {
+    hidden: yes
     label: "Past military service, period of active duty"
     view_label: "Demographic Variables"
     type: string
@@ -13046,6 +13242,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pedadtyp {
+    hidden: yes
     label: "Type of father"
     view_label: "Demographic Variables"
     type: string
@@ -13147,6 +13344,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: pedisear {
     label: "Disability - deaf or serious difficulty hearing"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -13176,6 +13374,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: pediseye {
     label: "Disability - blind or difficulty seeing even with glasses"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -13205,6 +13404,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: pedisrem {
     label: "Disability - difficulty remembering or making decisions"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -13234,6 +13434,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: pedisphy {
     label: "Disability - difficulty walking or climbing stairs"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -13263,6 +13464,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: pedisdrs {
     label: "Disability - difficulty dressing or bathing"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -13292,6 +13494,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: pedisout {
     label: "Disability - difficulty doing errands"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -13321,6 +13524,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: prdisflg {
     label: "Disability - recode, disabled"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -13348,6 +13552,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hutypea {
+    hidden: yes
     label: "Type a non-interview categories"
     view_label: "Household Variables"
     type: string
@@ -13419,6 +13624,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hefaminc {
+    hidden: yes
     label: "Total family income in past 12 months"
     view_label: "Household Variables"
     type: string
@@ -20460,6 +20666,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: ptio2ocd {
+    hidden: yes
     label: "(second job)occupation code"
     view_label: "Industry"
     type: string
@@ -26028,6 +26235,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peio2icd {
+    hidden: yes
     label: "(second job)industry code"
     view_label: "Industry"
     type: string
@@ -28011,6 +28219,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pepdemp1 {
+    hidden: yes
     label: "Individual has paid employees?"
     view_label: "Industry"
     type: string
@@ -28040,6 +28249,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: pepdemp2 {
+    hidden: yes
     label: "Individual has paid employees, second job"
     view_label: "Industry"
     type: string
@@ -28078,6 +28288,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: ptnmemp2 {
+    hidden: yes
     label: "-second job"
     view_label: "Industry"
     type: tier
@@ -31457,6 +31668,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peio2icd_census_2012 {
+    hidden: yes
     label: "(second job)industry code"
     view_label: "Industry"
     type: string
@@ -33660,6 +33872,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hutypea_census_2008 {
+    hidden: yes
     label: "Type a non-interview categories"
     view_label: "Household Variables"
     type: string
@@ -34141,6 +34354,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: huspnish {
+    hidden: yes
     label: "Spanish only spoken"
     view_label: "Household Variables"
     type: string
@@ -34177,6 +34391,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hutypea_census_2006 {
+    hidden: yes
     label: "Type a non-interview categories"
     view_label: "Household Variables"
     type: string
@@ -36949,6 +37164,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hutypea_census_2004 {
+    hidden: yes
     label: "Type a non-interview categories"
     view_label: "Household Variables"
     type: string
@@ -39913,6 +40129,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hufinal_census_2002 {
+    hidden: yes
     label: "Final code,status of interview"
     view_label: "Household Variables"
     type: string
@@ -40544,6 +40761,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: huhhnum {
+    hidden: yes
     label: "Replacement number"
     view_label: "Household Variables"
     type: tier
@@ -40553,6 +40771,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: huprscnt_census_2002 {
+    hidden: yes
     label: "# of actual & attempted personal contacts"
     view_label: "Household Variables"
     type: tier
@@ -40562,6 +40781,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hutypc_census_2002 {
+    hidden: yes
     label: "Type c non-interview categories"
     view_label: "Household Variables"
     type: string
@@ -40647,6 +40867,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hutypea_census_2002 {
+    hidden: yes
     label: "Type a non-interview categories"
     view_label: "Household Variables"
     type: string
@@ -43303,6 +43524,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: pulbhsec {
     label: "Total seconds to complete labor force items"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: tier
     tiers: [0, 25000, 50000, 75000, 99999]
     style: classic
@@ -48492,6 +48714,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peio2icd_census_2002 {
+    hidden: yes
     label: "(second job)industry code"
     view_label: "Industry"
     type: string
@@ -50166,6 +50389,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: ptio2ocd_census_2002 {
+    hidden: yes
     label: "(second job)occupation code"
     view_label: "Industry"
     type: string
@@ -54053,6 +54277,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prdtind2_census_2002 {
+    hidden: yes
     label: "(second job)detailed industry-recode"
     view_label: "Industry"
     type: string
@@ -54769,6 +54994,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prdtocc2_census_2002 {
+    hidden: yes
     label: "(second job)detailed occupation groups-recode"
     view_label: "Industry"
     type: string
@@ -55282,6 +55508,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prmjind2_census_2002 {
+    hidden: yes
     label: "(second job)industry,major groups-recode"
     view_label: "Industry"
     type: string
@@ -55571,6 +55798,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prmjocc2_census_2002 {
+    hidden: yes
     label: "(second job)occupation,major groups-recode"
     view_label: "Industry"
     type: string
@@ -55727,6 +55955,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peernvr1 {
+    hidden: yes
     label: "(weekly),amount verification,y/n"
     view_label: "Earnings Variables"
     type: string
@@ -55749,6 +55978,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peernvr3 {
+    hidden: yes
     label: "(weekly)including over-time/tips/etc. amount,y/n"
     view_label: "Earnings Variables"
     type: string
@@ -55771,6 +56001,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: puernvr4 {
+    hidden: yes
     label: "Confirm amount,y/n"
     view_label: "Earnings Variables"
     type: string
@@ -58193,6 +58424,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hufinal_census_2000 {
+    hidden: yes
     label: "Final code,status of interview"
     view_label: "Household Variables"
     type: string
@@ -58824,6 +59056,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: huprscnt_census_2000 {
+    hidden: yes
     label: "# of actual & attempted personal contacts"
     view_label: "Household Variables"
     type: tier
@@ -58833,6 +59066,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hutypc_census_2000 {
+    hidden: yes
     label: "Type c non-interview categories"
     view_label: "Household Variables"
     type: string
@@ -58918,6 +59152,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hutypea_census_2000 {
+    hidden: yes
     label: "Type a non-interview categories"
     view_label: "Household Variables"
     type: string
@@ -66575,6 +66810,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peio2icd_census_2000 {
+    hidden: yes
     label: "(second job)industry code"
     view_label: "Industry"
     type: string
@@ -68249,6 +68485,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: ptio2ocd_census_2000 {
+    hidden: yes
     label: "(second job)occupation code"
     view_label: "Industry"
     type: string
@@ -72136,6 +72373,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prdtind2_census_2000 {
+    hidden: yes
     label: "(second job)detailed industry-recode"
     view_label: "Industry"
     type: string
@@ -72852,6 +73090,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prdtocc2_census_2000 {
+    hidden: yes
     label: "(second job)detailed occupation groups-recode"
     view_label: "Industry"
     type: string
@@ -73365,6 +73604,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prmjind2_census_2000 {
+    hidden: yes
     label: "(second job)industry,major groups-recode"
     view_label: "Industry"
     type: string
@@ -73654,6 +73894,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prmjocc2_census_2000 {
+    hidden: yes
     label: "(second job)occupation,major groups-recode"
     view_label: "Industry"
     type: string
@@ -74158,6 +74399,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hufinal_census_1998 {
+    hidden: yes
     label: "Final code,status of interview"
     view_label: "Household Variables"
     type: string
@@ -74789,6 +75031,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hulensec {
+    hidden: yes
     label: "Total time(seconds) to complete interview"
     view_label: "Household Variables"
     type: tier
@@ -74798,6 +75041,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: huprscnt_census_1998 {
+    hidden: yes
     label: "# of actual & attempted personal contacts"
     view_label: "Household Variables"
     type: tier
@@ -74807,6 +75051,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hutypc_census_1998 {
+    hidden: yes
     label: "Type c non-interview categories"
     view_label: "Household Variables"
     type: string
@@ -74892,6 +75137,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hutypea_census_1998 {
+    hidden: yes
     label: "Type a non-interview categories"
     view_label: "Household Variables"
     type: string
@@ -82549,6 +82795,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peio2icd_census_1998 {
+    hidden: yes
     label: "(second job)industry code"
     view_label: "Industry"
     type: string
@@ -84223,6 +84470,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: ptio2ocd_census_1998 {
+    hidden: yes
     label: "(second job)occupation code"
     view_label: "Industry"
     type: string
@@ -88110,6 +88358,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prdtind2_census_1998 {
+    hidden: yes
     label: "(second job)detailed industry-recode"
     view_label: "Industry"
     type: string
@@ -88826,6 +89075,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prdtocc2_census_1998 {
+    hidden: yes
     label: "(second job)detailed occupation groups-recode"
     view_label: "Industry"
     type: string
@@ -89339,6 +89589,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prmjind2_census_1998 {
+    hidden: yes
     label: "(second job)industry,major groups-recode"
     view_label: "Industry"
     type: string
@@ -89628,6 +89879,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prmjocc2_census_1998 {
+    hidden: yes
     label: "(second job)occupation,major groups-recode"
     view_label: "Industry"
     type: string
@@ -90132,6 +90384,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hryear {
+    hidden: yes
     label: "2 digit year of interview"
     view_label: "Household Variables"
     type: tier
@@ -90141,6 +90394,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hufinal_census_1996 {
+    hidden: yes
     label: "Final code,status of interview"
     view_label: "Household Variables"
     type: string
@@ -90772,6 +91026,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: huprscnt_census_1996 {
+    hidden: yes
     label: "# of actual & attempted personal contacts"
     view_label: "Household Variables"
     type: tier
@@ -90781,6 +91036,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hutypc_census_1996 {
+    hidden: yes
     label: "Type c non-interview categories"
     view_label: "Household Variables"
     type: string
@@ -90866,6 +91122,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hutypea_census_1996 {
+    hidden: yes
     label: "Type a non-interview categories"
     view_label: "Household Variables"
     type: string
@@ -98523,6 +98780,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peio2icd_census_1996 {
+    hidden: yes
     label: "(second job)industry code"
     view_label: "Industry"
     type: string
@@ -100197,6 +100455,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: ptio2ocd_census_1996 {
+    hidden: yes
     label: "(second job)occupation code"
     view_label: "Industry"
     type: string
@@ -104084,6 +104343,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prdtind2_census_1996 {
+    hidden: yes
     label: "(second job)detailed industry-recode"
     view_label: "Industry"
     type: string
@@ -104800,6 +105060,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prdtocc2_census_1996 {
+    hidden: yes
     label: "(second job)detailed occupation groups-recode"
     view_label: "Industry"
     type: string
@@ -105313,6 +105574,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prmjind2_census_1996 {
+    hidden: yes
     label: "(second job)industry,major groups-recode"
     view_label: "Industry"
     type: string
@@ -105602,6 +105864,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prmjocc2_census_1996 {
+    hidden: yes
     label: "(second job)occupation,major groups-recode"
     view_label: "Industry"
     type: string
@@ -106092,6 +106355,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hufinal_census_1994 {
+    hidden: yes
     label: "Final code,status of interview"
     view_label: "Household Variables"
     type: string
@@ -106723,6 +106987,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: huprscnt_census_1994 {
+    hidden: yes
     label: "# of actual & attempted personal contacts"
     view_label: "Household Variables"
     type: tier
@@ -106732,6 +106997,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hutypc_census_1994 {
+    hidden: yes
     label: "Type c non-interview categories"
     view_label: "Household Variables"
     type: string
@@ -106817,6 +107083,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: hutypea_census_1994 {
+    hidden: yes
     label: "Type a non-interview categories"
     view_label: "Household Variables"
     type: string
@@ -109294,6 +109561,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   dimension: prioelg_census_1994 {
     label: "Industry and occupation edit eligibility flag"
     view_label: "Labor Force Variables"
+    hidden: yes
     type: string
 
     case: {
@@ -114503,6 +114771,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: peio2icd_census_1994 {
+    hidden: yes
     label: "(second job)industry code"
     view_label: "Industry"
     type: string
@@ -116177,6 +116446,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: ptio2ocd_census_1994 {
+    hidden: yes
     label: "(second job)occupation code"
     view_label: "Industry"
     type: string
@@ -120064,6 +120334,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prdtind2_census_1994 {
+    hidden: yes
     label: "(second job)detailed industry-recode"
     view_label: "Industry"
     type: string
@@ -120780,6 +121051,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prdtocc2_census_1994 {
+    hidden: yes
     label: "(second job)detailed occupation groups-recode"
     view_label: "Industry"
     type: string
@@ -121293,6 +121565,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prmjind2_census_1994 {
+    hidden: yes
     label: "(second job)industry,major groups-recode"
     view_label: "Industry"
     type: string
@@ -121582,6 +121855,7 @@ view: CPS_Voting_and_Registration_wo_cohort {
   }
 
   dimension: prmjocc2_census_1994 {
+    hidden: yes
     label: "(second job)occupation,major groups-recode"
     view_label: "Industry"
     type: string

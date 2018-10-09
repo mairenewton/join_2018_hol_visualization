@@ -37,6 +37,7 @@ view: cps_clean {
   }
 
   dimension: raw_age_2016 {
+    hidden: yes
     label: "Age in 2016"
     view_label: "Demographic Variables"
     type: number
@@ -163,6 +164,7 @@ view: cps_clean {
   }
 
   dimension: voted {
+    hidden: yes
     label: "Did you vote in the November election?"
     view_label: "Voting and Registration Supplement Variables"
     type: string
@@ -216,8 +218,6 @@ view: cps_clean {
         label: "No"
       }
     }
-
-    hidden: yes
   }
 
   dimension: in_person_mail {
@@ -289,6 +289,7 @@ view: cps_clean {
   }
 
   dimension: on_or_before {
+    hidden: yes
     label: "Did you vote on Election Day or before?"
     view_label: "Voting and Registration Supplement Variables"
     type: string
@@ -345,6 +346,7 @@ view: cps_clean {
   }
 
   dimension: when_obtained_license {
+    hidden: yes
     label: "Did you register when you obtained or renewed license or another way?"
     view_label: "Voting and Registration Supplement Variables"
     type: string
@@ -388,6 +390,7 @@ view: cps_clean {
   }
 
   dimension: registered {
+    hidden: yes
     label: "Were you registered to vote in the November election?"
     view_label: "Voting and Registration Supplement Variables"
     type: string
@@ -458,6 +461,7 @@ view: cps_clean {
   }
 
   dimension: time_at_address {
+    hidden: yes
     label: "How long have you been at your current address?"
     view_label: "Voting and Registration Supplement Variables"
     type: string
@@ -824,6 +828,7 @@ view: cps_clean {
   }
 
   dimension: race_hisp {
+    hidden: yes
     label: "Race With Hispanic"
     view_label: "Cohort Demographic Variables"
     type: string
@@ -864,6 +869,7 @@ view: cps_clean {
   }
 
   dimension: register_after_1995 {
+    hidden: yes
     label: "Did you register to vote after January 1, 1995?"
     view_label: "Voting and Registration Supplement Variables"
     type: string
@@ -1267,6 +1273,7 @@ view: cps_clean {
   }
 
   dimension: pusck4 {
+    hidden: yes
     label: "Are you reporting for yourself or for another person?"
     view_label: "Voting and Registration Supplement Variables"
     type: string
@@ -1308,6 +1315,7 @@ view: cps_clean {
   }
 
   dimension: eligible_vote_yesno {
+    hidden: yes
     label: "Were you eligible to vote in the November election? (Yes/No)"
     view_label: "Voting and Registration Supplement Variables"
     type: string
@@ -1322,6 +1330,7 @@ view: cps_clean {
   }
 
   dimension: registered_recode_yesno {
+    hidden: yes
     label: "Were you registered to vote in the November election? (Yes/No)"
     view_label: "Voting and Registration Supplement Variables"
     type: string
@@ -1353,6 +1362,7 @@ view: cps_clean {
   }
 
   dimension: obama_coalition {
+    hidden: yes
     label: "Member of the Obama Coalition (Yes/No)"
     view_label: "Voting and Registration Supplement Variables"
     type: string
@@ -1367,13 +1377,14 @@ view: cps_clean {
   }
 
   dimension: weekly_earnings {
+    hidden: yes
     sql: CASE WHEN ${TABLE}.pternwa between 0.0 AND 2884.61 AND ${TABLE}.HRMIS in (4, 8) THEN ${TABLE}.pternwa ELSE -1 END ;;
     type: number
     view_label: "Earnings Variables"
   }
 
   dimension: yearly_earnings {
-    label: "Yearly earnings"
+    label: "Yearly Earnings Tier"
     type: tier
     tiers: [
       0,
@@ -1397,11 +1408,57 @@ view: cps_clean {
     sql: CASE WHEN ${weekly_earnings} >= 0 THEN 52.0 * ${weekly_earnings} * ${TABLE}.PWSSWGT ELSE NULL END ;;
   }
 
+  measure: weighted_yearly_earnings_2012 {
+    hidden: yes
+    type: sum
+    sql: CASE WHEN ${weekly_earnings} >= 0 THEN 52.0 * ${weekly_earnings} * ${TABLE}.PWSSWGT ELSE NULL END ;;
+    filters: {
+      field: year_of_interview
+      value: "2012"
+    }
+  }
+
+  measure: weighted_yearly_earnings_2014 {
+    hidden: yes
+    type: sum
+    sql: CASE WHEN ${weekly_earnings} >= 0 THEN 52.0 * ${weekly_earnings} * ${TABLE}.PWSSWGT ELSE NULL END ;;
+    filters: {
+      field: year_of_interview
+      value: "2014"
+    }
+  }
+
   measure: average_yearly_earnings {
     view_label: "Earnings Variables"
     type: number
     sql: ${weighted_yearly_earnings} / ${cohort_population_for_earnings} ;;
     value_format_name: usd_0
+  }
+
+  measure: average_yearly_earnings_2012 {
+    hidden: yes
+    label: "2012 Average Earnings"
+    view_label: "Earnings Variables"
+    type: number
+    sql: ${weighted_yearly_earnings_2012} / ${cohort_population_for_earnings_2012} ;;
+    value_format_name: usd_0
+  }
+
+  measure: average_yearly_earnings_2014 {
+    label: "Average Yearly Earnings in 2014"
+    view_label: "Earnings Variables"
+    type: number
+    sql: ${weighted_yearly_earnings_2014} / ${cohort_population_for_earnings_2014} ;;
+    html: {{ rendered_value }} average earnings in {{ prmjind1._rendered_value }} in 2014 ;;
+    value_format_name: usd_0
+  }
+
+  measure: percent_change_average_earnings_2012_vs_2014 {
+    type: number
+    label: "% Change Earnings 2014 vs. 2012"
+    view_label: "Earnings Variables"
+    sql: (${average_yearly_earnings_2014}-${average_yearly_earnings_2012})/${average_yearly_earnings_2012} ;;
+    value_format_name: percent_1
   }
 
   measure: average_yearly_family_earnings {
@@ -5259,6 +5316,7 @@ view: cps_clean {
   }
 
   dimension: peafwhn1 {
+    hidden: yes
     label: "When was your period of active duty (#1)"
 
     case: {
@@ -5353,6 +5411,7 @@ view: cps_clean {
   }
 
   dimension: serve_after_911 {
+    hidden: yes
     label: "Did you serve in the military after 9/11?"
     view_label: "Demographic Labels"
     sql: CASE WHEN
@@ -5374,6 +5433,7 @@ view: cps_clean {
   }
 
   dimension: serve_vietnam {
+    hidden: yes
     label: "Did you serve in the Vietnam Era?"
     view_label: "Demographic Labels"
     sql: CASE WHEN
@@ -5398,6 +5458,7 @@ view: cps_clean {
   }
 
   dimension: serve_korea {
+    hidden: yes
     label: "Did you serve during the Korean War?"
     view_label: "Demographic Labels"
     sql: CASE WHEN
@@ -5422,6 +5483,7 @@ view: cps_clean {
   }
 
   dimension: serve_ww2 {
+    hidden: yes
     label: "Did you serve during World War 2?"
     view_label: "Demographic Labels"
     sql: CASE WHEN
@@ -5446,6 +5508,7 @@ view: cps_clean {
   }
 
   dimension: serve_ww1 {
+    hidden: yes
     label: "Did you serve during World War 1?"
     view_label: "Demographic Labels"
     sql: CASE WHEN
@@ -5458,18 +5521,22 @@ view: cps_clean {
   }
 
   dimension: peafwhn2 {
+    hidden: yes
     label: "When was your period of active duty (#2)"
   }
 
   dimension: peafwhn3 {
+    hidden: yes
     label: "When was your period of active duty (#3)"
   }
 
   dimension: peafwhn4 {
+    hidden: yes
     label: "When was your period of active duty (#4)"
   }
 
   dimension: pems123 {
+    hidden: yes
     label: "Was Master's program 1, 2, or 3 years"
   }
 
@@ -5481,19 +5548,23 @@ view: cps_clean {
   }
 
   dimension: prpertyp {
+    hidden: yes
     label: "Person type"
     description: "Child or Adult; Civilian or Military"
   }
 
   dimension: prchld {
+    hidden: yes
     label: "Ages of children by age group(s)"
   }
 
   dimension: prinuyer {
+    hidden: yes
     label: "Year of immigration"
   }
 
   dimension: prcitshp {
+    hidden: yes
     label: "United States citizenship group"
   }
 
@@ -6019,6 +6090,7 @@ view: cps_clean {
   }
 
   filter: state_select {
+    hidden: yes
     view_label: "State comparisons"
     suggest_explore: cps_clean
     suggest_dimension: cps_clean.gestcen
@@ -6026,6 +6098,7 @@ view: cps_clean {
   }
 
   filter: region_select {
+    hidden: yes
     view_label: "Region comparisons"
     suggest_explore: cps_clean
     suggest_dimension: cps_clean.us_regions
@@ -6033,6 +6106,7 @@ view: cps_clean {
   }
 
   dimension: state_comparitor {
+    hidden: yes
     view_label: "State comparisons"
     description: "Use in conjunction with state select filter to compare to other states"
     sql: CASE
@@ -6124,6 +6198,7 @@ view: cps_clean {
   }
 
   dimension: peernhro {
+    hidden: yes
     label: "# hours usually worked weekly (for workers paid hourly)"
     view_label: "Earnings Variables"
     type: tier
@@ -6144,6 +6219,7 @@ view: cps_clean {
   }
 
   dimension: peernwkp {
+    hidden: yes
     label: "# paid weeks per year (for workers paid hourly/annually)"
     view_label: "Earnings Variables"
     type: tier
@@ -6423,6 +6499,7 @@ view: cps_clean {
   }
 
   dimension: peio2cow {
+    hidden: yes
     label: "Class of worker"
     group_label: "Second job"
 
@@ -6558,6 +6635,7 @@ view: cps_clean {
   }
 
   dimension: prcow2 {
+    hidden: yes
     label: "Class of worker-recode"
     group_label: "Second job"
 
@@ -6686,6 +6764,7 @@ view: cps_clean {
   }
 
   dimension: prdtcow2 {
+    hidden: yes
     label: "Detailed class of worker"
     group_label: "Second job"
 
@@ -6790,17 +6869,18 @@ view: cps_clean {
 
   dimension: primind1 {
     label: "Detailed industry (22 groups)"
-    group_label: "Main job"
+    # group_label: "Main job"
   }
 
   dimension: primind2 {
+    hidden: yes
     label: "Detailed industry (22 groups)"
     group_label: "Second job"
   }
 
   dimension: prdtind1 {
     label: "Detailed industry (52 groups)"
-    group_label: "Main job"
+    # group_label: "Main job"
 
     case: {
       when: {
@@ -7316,6 +7396,7 @@ view: cps_clean {
   }
 
   dimension: prdtind2 {
+    hidden: yes
     label: "Detailed industry (52 groups)"
     group_label: "Second job"
 
@@ -7838,6 +7919,7 @@ view: cps_clean {
   }
 
   dimension: puio2mfg {
+    hidden: yes
     label: "In manufacturing/wholesale/retail?"
     group_label: "Second job"
   }
@@ -7848,6 +7930,7 @@ view: cps_clean {
   }
 
   dimension: pepdemp2 {
+    hidden: yes
     label: "Individual has paid employees?"
     group_label: "Second job"
   }
@@ -8104,6 +8187,7 @@ view: cps_clean {
   }
 
   dimension: prdtocc2 {
+    hidden: yes
     label: "Detailed occupation groups - recode"
     group_label: "Second job"
 
@@ -8356,7 +8440,7 @@ view: cps_clean {
 
   dimension: peio1icd {
     label: "Industry code"
-    group_label: "Main job"
+    # group_label: "Main job"
 
     case: {
       when: {
@@ -10978,6 +11062,7 @@ view: cps_clean {
   }
 
   dimension: peio2icd {
+    hidden: yes
     label: "Industry code"
     group_label: "Second job"
 
@@ -13602,7 +13687,7 @@ view: cps_clean {
 
   dimension: prmjind1 {
     label: "Industry, major groups"
-    group_label: "Main job"
+    # group_label: "Main job"
 
     case: {
       when: {
@@ -13742,6 +13827,7 @@ view: cps_clean {
   }
 
   dimension: prmjind2 {
+    hidden: yes
     label: "Industry, major groups"
     group_label: "Second job"
 
@@ -13888,6 +13974,7 @@ view: cps_clean {
   }
 
   dimension: ptio2ocd {
+    hidden: yes
     label: "Occupation code"
     group_label: "Second job"
   }
@@ -14106,6 +14193,7 @@ view: cps_clean {
   }
 
   dimension: is_teacher {
+    hidden: yes
     label: "Currently works as teacher"
     sql: CASE
       WHEN
@@ -14125,10 +14213,11 @@ view: cps_clean {
        ;;
     type: string
     view_label: "Industry"
-    group_label: "Main job"
+    # group_label: "Main job"
   }
 
   dimension: is_special_education_teacher {
+    hidden: yes
     label: "Special Education Teacher"
     sql: CASE
       WHEN
@@ -14143,7 +14232,7 @@ view: cps_clean {
        ;;
     type: string
     view_label: "Industry"
-    group_label: "Main job"
+    # group_label: "Main job"
   }
 
   dimension: household_primary_key {
@@ -14159,10 +14248,111 @@ view: cps_clean {
     sql: ${TABLE}.PWSSWGT ;;
   }
 
+  measure: cohort_population_2012 {
+    hidden: yes
+    label: "People"
+    view_label: "Population Counts"
+    type: sum
+    value_format_name: decimal_0
+    sql: ${TABLE}.PWSSWGT ;;
+    filters: {
+      field: year_of_interview
+      value: "2012"
+    }
+  }
+
+  measure: cohort_population_2014 {
+    label: "People in 2014"
+    view_label: "Population Counts"
+    type: sum
+    value_format_name: decimal_0
+    sql: ${TABLE}.PWSSWGT ;;
+    filters: {
+      field: year_of_interview
+      value: "2014"
+    }
+  }
+
+  measure: percent_change_population_2014_vs_2012 {
+    label: "% Change Population 2014 vs. 2012"
+    view_label: "Population Counts"
+    type: number
+    sql: (${cohort_population_2014}-${cohort_population_2012})/${cohort_population_2012} ;;
+    value_format_name: percent_1
+  }
+
+  measure: cohort_population_non_hispanic {
+    label: "Population Count: Non-Hispanic"
+    view_label: "Population Counts"
+    type: sum
+    value_format_name: decimal_0
+    sql: ${TABLE}.PWSSWGT ;;
+    filters: {
+      field: prhspnon_yesno
+      value: "No"
+    }
+  }
+
+  measure: cohort_population_hispanic {
+    label: "Population Count: Hispanic"
+    view_label: "Population Counts"
+    type: sum
+    value_format_name: decimal_0
+    sql: ${TABLE}.PWSSWGT ;;
+    filters: {
+      field: prhspnon_yesno
+      value: "Yes"
+    }
+  }
+
+  measure: percent_change_number_of_people {
+    label: "% Change in Number of People"
+    view_label: "Population Counts"
+    type: percent_of_previous
+    sql: ${cohort_population} ;;
+    direction: "row"
+  }
+
+  measure: percent_of_previous_people_hispanic {
+    label: "% Change in Number of People: Hispanic"
+    view_label: "Population Counts"
+    type: percent_of_previous
+    sql: ${cohort_population_hispanic} ;;
+    direction: "column"
+  }
+
+  measure: percent_change_people_non_hispanic {
+    label: "% Change in Number of People: Non-Hispanic"
+    view_label: "Population Counts"
+    type: percent_of_previous
+    sql: ${cohort_population_non_hispanic} ;;
+    direction: "column"
+  }
+
   measure: cohort_population_for_earnings {
     hidden: yes
     type: sum
     sql: CASE WHEN ${TABLE}.pternwa between 0.0 AND 2884.61 AND ${TABLE}.HRMIS in (4, 8) THEN ${TABLE}.PWSSWGT ELSE NULL END ;;
+  }
+
+  measure: cohort_population_for_earnings_2012 {
+    hidden: yes
+    type: sum
+    sql: CASE WHEN ${TABLE}.pternwa between 0.0 AND 2884.61 AND ${TABLE}.HRMIS in (4, 8) THEN ${TABLE}.PWSSWGT ELSE NULL END ;;
+    filters: {
+      field: year_of_interview
+      value: "2012"
+    }
+  }
+
+  measure: cohort_population_for_earnings_2014 {
+    hidden: yes
+    type: sum
+    sql: CASE WHEN ${TABLE}.pternwa between 0.0 AND 2884.61 AND ${TABLE}.HRMIS in (4, 8) THEN ${TABLE}.PWSSWGT ELSE NULL END ;;
+    filters: {
+      field: year_of_interview
+      value: "2014"
+    }
   }
 
   measure: cohort_households_for_earnings {
