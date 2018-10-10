@@ -14273,6 +14273,44 @@ view: cps_clean {
     }
   }
 
+  measure: cohort_population_home_owners {
+    label: "Number of Homeowners"
+    view_label: "Population Counts"
+    type: sum
+    value_format_name: decimal_0
+    sql: ${TABLE}.PWSSWGT ;;
+    filters: {
+      field: hetenure
+      value: "Owned Or Being Bought By A Hh Member"
+    }
+  }
+
+  measure: cohort_population_renters {
+    label: "Number of Renters"
+    view_label: "Population Counts"
+    type: sum
+    value_format_name: decimal_0
+    sql: ${TABLE}.PWSSWGT ;;
+    filters: {
+      field: hetenure
+      value: "Rented for cash"
+    }
+  }
+
+  measure: percent_change_homeowners {
+    label: "% Change Population Owning Homes"
+    view_label: "Population Counts"
+    type: percent_of_previous
+    sql: ${cohort_population_home_owners} ;;
+  }
+
+  measure: percent_change_renters {
+    label: "% of Total Population Renting Homes"
+    view_label: "Population Counts"
+    type: percent_of_previous
+    sql: ${cohort_population_renters} ;;
+  }
+
   measure: percent_change_population_2014_vs_2012 {
     label: "% Change Population 2014 vs. 2012"
     view_label: "Population Counts"
